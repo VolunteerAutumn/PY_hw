@@ -88,3 +88,92 @@ print(p)
 
 # PART II
 # ----1
+s = int(input("Enter the starting number > "))
+e = int(input("Enter the end number > "))
+sumeven, sumodd, sumc9 = 0, 0, 0
+numev, numodd, numc9 = 0, 0, 0
+
+for i in range(s, e+1):
+	if i % 2 == 0:
+		sumeven+=i
+		numev+=1
+	elif i % 2 != 0:
+		sumodd+=i
+		numodd += 1
+	if i % 9 == 0:
+		sumc9 += i
+		numc9 += 1
+
+print(f"Sum of even numbers in range from {s} to {e} is {sumeven}.")
+print(f"Average of these is {sumeven//numev}")
+print()
+print(f"Sum of odd numbers in range from {s} to {e} is {sumodd}.")
+print(f"Average of these is {sumodd//numodd}")
+print()
+print(f"Sum of numbers divisible by 9 in range from {s} to {e} is {sumc9}.")
+print(f"Average of these is {sumc9//numc9}")
+
+# ----2
+l = int(input("Enter the column height > "))
+s = input("What's the symbol you would like to use to build the column? > ")
+
+for i in range(l):
+	print(s)
+# ----3
+while True:
+	n = int(input("Enter any number (enter 7 to stop) > "))
+	if n==7:
+		print("Good bye!")
+		break
+	elif n>0:
+		print("Number is positive")
+	elif n<0:
+		print("Number is negative")
+	elif n==0:
+		print("Number is equal to zero")
+# ----4
+numbers = [ ]
+n = None
+
+while not n == 7:
+	n = input("Enter number - \"s\" to stop and count, 7 to quit the program. > ")
+	if not n.lower().startswith("s"):
+		if int(n) == 7:
+			print("Good bye!")
+			break
+		numbers.append(int(n))
+	elif n.lower().startswith("s"):
+		print(f"Sum of numbers you entered is {sum(numbers)}.")
+		print(f"Biggest of numbers you entered is {max(numbers)}.")
+		print(f"Smallest of numbers you entered is {min(numbers)}.")
+
+# ----5
+n = int(input("Enter the number > "))
+divisibility_cases_number = 0
+
+if n <= 1:
+	print("Number must be larger than 1.")
+	exit()
+
+for i in range(1, n + 1):
+	if n % i == 0:
+		divisibility_cases_number += 1
+
+if divisibility_cases_number == 2:
+	print("The number you typed is prime!")
+else:
+	print("The number you typed is NOT prime!")
+
+# !!! я іду легшими шляхами відомими для мене, лол !!! #
+# ----6
+n = int(input("Enter the number > "))
+a, b = 0, 1
+
+while not b>n:
+	if n == a or n == b:
+		print("Your number is present in fibonacci order!")
+		exit()
+	else:
+		a, b = b, a + b
+		
+print("Your number is NOT present in fibonacci order!")
