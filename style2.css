@@ -1,0 +1,76 @@
+.nok1::before {
+	content: "☐ ";
+	background-color: #a5ccdb;
+	padding-right: 20px;
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.nok1 {
+	background-color: #a5ccdb;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.nok1::after {
+	content: "⨯";
+	background-color: #a5ccdb;
+	color: #7f1e28;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* ----------- */
+.nok2::before {
+	content: "☐ ";
+	background-color: #add9e6;
+	padding-right: 20px;
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.nok2 {
+	background-color: #add9e6;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.nok2::after {
+	content: "⨯";
+	background-color: #add9e6;
+	color: #7f1e28;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* ----------- */
+.ok::before {
+	content: "☑ ";
+	background-color: #e2e2e2;
+	padding-right: 20px;
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.ok {
+	background-color: #e2e2e2;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.ok::after {
+	content: "⨯";
+	background-color: #e2e2e2;
+	color: #7f1e28;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* ----------- */
+ul {
+	list-style-type: none;
+	padding:0px;
+}
